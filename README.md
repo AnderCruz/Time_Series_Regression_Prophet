@@ -41,7 +41,6 @@ Built for **Nowa Analytics** to demonstrate scalable time series solutions for c
 
 
 ## Results  
-![Forecast Visualization](docs/forecast_plot.png) *Example: Retail sales prediction with 95% confidence intervals.*  
 
 **Validation Metrics**:  
 | Metric | Value  |  
