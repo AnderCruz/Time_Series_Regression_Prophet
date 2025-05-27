@@ -1,57 +1,68 @@
-# Time Series Forecasting with Prophet | Nowa Analytics
-A machine learning project for robust time series prediction and interactive web deployment
+# Ozone (O3) Concentration Forecasting with Prophet
 
-## Project Overview  
-This project implements **Prophet** for time series forecasting, focusing on business-friendly analytics. It includes:  
-- **End-to-end modeling**: Data preprocessing, trend/seasonality decomposition, and forecast evaluation.  
-- **Performance optimization**: Hyperparameter tuning and cross-validation for robust predictions.  
-- **Web deployment**: An interactive Streamlit app for visualizing historical data and forecasts.  
-- **Full CI/CD pipeline**: Deployed for stakeholder access.  
+## Project Overview
 
-Built for **Nowa Analytics** to demonstrate scalable time series solutions for client use cases.  
+This project analyzes and forecasts daily ozone (O3) concentration levels using Facebook's Prophet time series forecasting model. The dataset contains daily air quality measurements from March 2020 to February 2024, including various pollutants and temperature readings.
 
-## Key Features  
-### 1. **Time Series Analysis**  
-- Decompose trends, seasonality, and holidays using Prophet.  
-- Handle missing data and outliers.  
+## Key Features
 
-### 2. **Model Evaluation**  
-- Metrics: RMSE, MAE, MAPE.  
-- Cross-validation with `cross_validation` and `performance_metrics`.  
+- **Time Series Analysis**: Visual exploration of O3 concentration trends over 4 years
+- **Seasonal Patterns**: Monthly aggregation to identify seasonal variations
+- **Forecasting**: Predictions for future O3 levels using Prophet
+- **Interactive Visualizations**: Plotly charts for exploratory data analysis
 
-### 3. **Web Application (Streamlit)**  
-- Interactive plots for historical data + forecasts.  
-- Adjustable forecast horizons and confidence intervals.  
+## Data Description
 
-### 4. **Deployment**  
-- Containerized with Docker.  
-- Deployed on [Streamlit Cloud](https://streamlit.io/) / [Heroku](https://www.heroku.com/).  
+The dataset contains 1,460 daily records with the following variables:
+- `Data`: Date of measurement (YYYY-MM-DD)
+- `PM2.5`: Particulate Matter 2.5 microns
+- `PM10`: Particulate Matter 10 microns
+- `SO2`: Sulfur Dioxide
+- `NO2`: Nitrogen Dioxide
+- `CO`: Carbon Monoxide
+- `O3`: Ozone (target variable)
+- `TEMP`: Temperature
 
+## Analysis Highlights
 
-## Repository Structure  
- 
-├── data/                    # Raw/processed datasets  
-├── notebooks/               # EDA and model prototyping (Jupyter)  
-├── src/  
-│   ├── app.py               # Streamlit application  
-│   ├── model.py             # Prophet training/prediction logic  
-│   └── utils.py             # Data preprocessing helpers  
-├── requirements.txt         # Python dependencies  
-└── Dockerfile               # Containerization  
+1. **Time Series Visualization**:
+   - Line chart showing daily O3 fluctuations
+   - Clear seasonal patterns visible in the data
 
+2. **Monthly Aggregation**:
+   - Bar chart displaying average O3 levels by month
+   - Highest concentrations typically occur in summer months
 
-## Results  
+3. **Prophet Forecasting**:
+   - Trained on 4 years of daily data
+   - 365-day future forecast generated
+   - Uncertainty intervals included in predictions
 
-**Validation Metrics**:  
-| Metric | Value  |  
-|--------|--------|  
-| RMSE   | 12.4   |  
-| MAPE   | 8.2%   |  
+## How to Use
 
-## Why Prophet?  
-- **Business Interpretability**: Clear trend/seasonality insights.  
-- **Scalability**: Automatic handling of missing data and outliers.  
-- **Fast Prototyping**: Minimal code for production-ready models.  
+1. Clone the repository
+2. Install dependencies: `pandas`, `prophet`, `plotly`, `numpy`
+3. Run the Jupyter notebook to:
+   - Explore the data visualizations
+   - Train the forecasting model
+   - Generate future predictions
+
+## Future Enhancements
+
+- Incorporate additional weather variables to improve accuracy
+- Add multivariate analysis of pollutant relationships
+- Implement anomaly detection for extreme O3 events
+- Create a dashboard for real-time monitoring
+
+## GitHub Analytics
+
+This project demonstrates:
+- Time series data preprocessing
+- Seasonal decomposition techniques
+- Prophet model configuration and interpretation
+- Interactive data visualization best practices
+
+The notebook includes clear markdown sections and comments to guide users through each analytical step.  
 
 ## Contact  
 **Nowa Analytics**  
