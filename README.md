@@ -1,7 +1,7 @@
 # Time Series Forecasting with Prophet | Nowa Analytics
 A machine learning project for robust time series prediction and interactive web deployment
 
-## 📌 Project Overview  
+## Project Overview  
 This project implements **Prophet** for time series forecasting, focusing on business-friendly analytics. It includes:  
 - **End-to-end modeling**: Data preprocessing, trend/seasonality decomposition, and forecast evaluation.  
 - **Performance optimization**: Hyperparameter tuning and cross-validation for robust predictions.  
@@ -10,7 +10,7 @@ This project implements **Prophet** for time series forecasting, focusing on bus
 
 Built for **Nowa Analytics** to demonstrate scalable time series solutions for client use cases.  
 
-## 🛠️ Key Features  
+## Key Features  
 ### 1. **Time Series Analysis**  
 - Decompose trends, seasonality, and holidays using Prophet.  
 - Handle missing data and outliers.  
@@ -28,7 +28,7 @@ Built for **Nowa Analytics** to demonstrate scalable time series solutions for c
 - Deployed on [Streamlit Cloud](https://streamlit.io/) / [Heroku](https://www.heroku.com/).  
 
 
-## 📂 Repository Structure  
+## Repository Structure  
  
 ├── data/                    # Raw/processed datasets  
 ├── notebooks/               # EDA and model prototyping (Jupyter)  
@@ -40,7 +40,7 @@ Built for **Nowa Analytics** to demonstrate scalable time series solutions for c
 └── Dockerfile               # Containerization  
 
 
-## 📈 Results  
+## Results  
 ![Forecast Visualization](docs/forecast_plot.png) *Example: Retail sales prediction with 95% confidence intervals.*  
 
 **Validation Metrics**:  
@@ -49,17 +49,17 @@ Built for **Nowa Analytics** to demonstrate scalable time series solutions for c
 | RMSE   | 12.4   |  
 | MAPE   | 8.2%   |  
 
-## 🌟 Why Prophet?  
+## Why Prophet?  
 - **Business Interpretability**: Clear trend/seasonality insights.  
 - **Scalability**: Automatic handling of missing data and outliers.  
 - **Fast Prototyping**: Minimal code for production-ready models.  
 
-## 📬 Contact  
+## Contact  
 **Nowa Analytics**  
 - Email: analytics@nowa.ai  
 - GitHub: [@nowa-analytics](https://github.com/nowa-analytics)  
 
 
-### 🔗 License  
+### License  
 MIT © 2024 Nowa Analytics.  
 
